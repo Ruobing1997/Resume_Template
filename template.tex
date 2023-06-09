@@ -1,0 +1,131 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.5in,right=0.5in,bottom=0.4in,top=0.6in]{geometry}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-5pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-5pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\huge \scshape \textbf{XXX (XX) XXX}}\\
+ % \vspace{1mm}
+	 XXX1@XX.edu $\vert$ +1XXXXXX $\vert$ https://www.linkedin.com/in/XXXX/ \\
+\end{center}
+
+\vspace{-3ex}
+\rule{\textwidth}{2pt} % Thicker upper line (80% of text width)
+% \vspace{-1.5ex}
+% \rule{\textwidth}{0.5pt} % Thinner lower line (80% of text width)
+
+%==== Education ====%
+\vspace*{1pt}
+\header{EDUCATION}
+\textbf{XXXX University}\hfill Portland, ME\\
+M.S. in Computer Science $\vert$ \textit{GPA: pending} \hfill Sep 2023 - May 2025\\
+\textbf{Selected Coursework:} XXXX\\
+
+\vspace{2mm}
+
+
+\header{SKILLS}
+
+\vspace{2mm}
+
+%==== Experience ====%
+\header{WORK EXPERIENCE}
+% \vspace{1mm}
+
+\textbf{XXXX - XXXX} \hfill XXX, China\\
+\textit{Role: XXX} \hfill July 2023 - Sept 2023
+\vspace{-2mm}
+\begin{itemize} \itemsep -1mm
+\item XX1
+\item XX2
+\end{itemize}
+
+\setlength{\parskip}{0pt} % Set the parskip to 0 points
+
+
+
+\vspace{-1mm}
+
+\header{ACADEMIC PROJECTS}
+\vspace{0mm}
+\noindent
+\textbf{XXXX} \hfill Sep 2021 - Dec 2021\\
+\vspace{-2.5mm}
+\begin{itemize}\itemsep -1mm
+\item 
+\end{itemize}
+
+
+
+\header{PUBLICATIONS}
+
+\vspace{2mm}
+
+\ 
+\end{document}
